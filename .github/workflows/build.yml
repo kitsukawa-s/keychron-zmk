@@ -43,3 +43,4 @@ jobs:
         with:
           name: keychron_b1_us-firmware
           path: app/build/zephyr/zmk.uf2
+
