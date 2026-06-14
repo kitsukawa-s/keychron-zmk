@@ -191,20 +191,20 @@
     };
 
 	/* === JIS-OS上でUS配列を実現する変換ルール === */
-	mm_grv:   mm_grv   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(LBKT)>, <&kp LS(EQUAL)>;      mods = <(MOD_LSFT|MOD_RSFT)>; };
-	mm_2:     mm_2     { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N2>,       <&kp LBKT>;            mods = <(MOD_LSFT|MOD_RSFT)>; };
-	mm_6:     mm_6     { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N6>,       <&kp EQUAL>;           mods = <(MOD_LSFT|MOD_RSFT)>; };
-	mm_7:     mm_7     { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N7>,       <&kp LS(N6)>;          mods = <(MOD_LSFT|MOD_RSFT)>; };
-	mm_8:     mm_8     { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N8>,       <&kp LS(SQT)>;         mods = <(MOD_LSFT|MOD_RSFT)>; };
-	mm_9:     mm_9     { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N9>,       <&kp LS(N8)>;          mods = <(MOD_LSFT|MOD_RSFT)>; };
-	mm_0:     mm_0     { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N0>,       <&kp LS(N9)>;          mods = <(MOD_LSFT|MOD_RSFT)>; };
-	mm_minus: mm_minus { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp MINUS>,    <&kp LS(INT1)>;        mods = <(MOD_LSFT|MOD_RSFT)>; };
-	mm_equal: mm_equal { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(MINUS)>,<&kp LS(SEMI)>;        mods = <(MOD_LSFT|MOD_RSFT)>; };
-	mm_lbkt:  mm_lbkt  { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp RBKT>,     <&kp LS(RBKT)>;        mods = <(MOD_LSFT|MOD_RSFT)>; };
-	mm_rbkt:  mm_rbkt  { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp NON_US_HASH>,<&kp LS(NON_US_HASH)>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-	mm_bslh:  mm_bslh  { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp INT1>,     <&kp LS(INT3)>;        mods = <(MOD_LSFT|MOD_RSFT)>; };
-	mm_semi:  mm_semi  { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp SEMI>,     <&kp SQT>;             mods = <(MOD_LSFT|MOD_RSFT)>; };
-	mm_quote: mm_quote { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(N7)>,   <&kp LS(N2)>;          mods = <(MOD_LSFT|MOD_RSFT)>; };
+	mm_grv:   mm_grv   { compatible = "zmk,behavior-mod-morph"; label = "MM_GRV";   #binding-cells = <0>; bindings = <&kp LS(LBKT)>, <&kp LS(EQUAL)>;      mods = <(MOD_LSFT|MOD_RSFT)>; };
+	mm_2:     mm_2     { compatible = "zmk,behavior-mod-morph"; label = "MM_2";     #binding-cells = <0>; bindings = <&kp N2>,       <&kp LBKT>;            mods = <(MOD_LSFT|MOD_RSFT)>; };
+	mm_6:     mm_6     { compatible = "zmk,behavior-mod-morph"; label = "MM_6";     #binding-cells = <0>; bindings = <&kp N6>,       <&kp EQUAL>;           mods = <(MOD_LSFT|MOD_RSFT)>; };
+	mm_7:     mm_7     { compatible = "zmk,behavior-mod-morph"; label = "MM_7";     #binding-cells = <0>; bindings = <&kp N7>,       <&kp LS(N6)>;          mods = <(MOD_LSFT|MOD_RSFT)>; };
+	mm_8:     mm_8     { compatible = "zmk,behavior-mod-morph"; label = "MM_8";     #binding-cells = <0>; bindings = <&kp N8>,       <&kp LS(SQT)>;         mods = <(MOD_LSFT|MOD_RSFT)>; };
+	mm_9:     mm_9     { compatible = "zmk,behavior-mod-morph"; label = "MM_9";     #binding-cells = <0>; bindings = <&kp N9>,       <&kp LS(N8)>;          mods = <(MOD_LSFT|MOD_RSFT)>; };
+	mm_0:     mm_0     { compatible = "zmk,behavior-mod-morph"; label = "MM_0";     #binding-cells = <0>; bindings = <&kp N0>,       <&kp LS(N9)>;          mods = <(MOD_LSFT|MOD_RSFT)>; };
+	mm_minus: mm_minus { compatible = "zmk,behavior-mod-morph"; label = "MM_MINUS"; #binding-cells = <0>; bindings = <&kp MINUS>,    <&kp LS(INT1)>;        mods = <(MOD_LSFT|MOD_RSFT)>; };
+	mm_equal: mm_equal { compatible = "zmk,behavior-mod-morph"; label = "MM_EQUAL"; #binding-cells = <0>; bindings = <&kp LS(MINUS)>,<&kp LS(SEMI)>;        mods = <(MOD_LSFT|MOD_RSFT)>; };
+	mm_lbkt:  mm_lbkt  { compatible = "zmk,behavior-mod-morph"; label = "MM_LBKT";  #binding-cells = <0>; bindings = <&kp RBKT>,     <&kp LS(RBKT)>;        mods = <(MOD_LSFT|MOD_RSFT)>; };
+	mm_rbkt:  mm_rbkt  { compatible = "zmk,behavior-mod-morph"; label = "MM_RBKT";  #binding-cells = <0>; bindings = <&kp NON_US_HASH>,<&kp LS(NON_US_HASH)>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+	mm_bslh:  mm_bslh  { compatible = "zmk,behavior-mod-morph"; label = "MM_BSLH";  #binding-cells = <0>; bindings = <&kp INT1>,     <&kp LS(INT3)>;        mods = <(MOD_LSFT|MOD_RSFT)>; };
+	mm_semi:  mm_semi  { compatible = "zmk,behavior-mod-morph"; label = "MM_SEMI";  #binding-cells = <0>; bindings = <&kp SEMI>,     <&kp SQT>;             mods = <(MOD_LSFT|MOD_RSFT)>; };
+	mm_quote: mm_quote { compatible = "zmk,behavior-mod-morph"; label = "MM_QUOTE"; #binding-cells = <0>; bindings = <&kp LS(N7)>,   <&kp LS(N2)>;          mods = <(MOD_LSFT|MOD_RSFT)>; };
 
 	keymap {
     	compatible = "zmk,keymap";
